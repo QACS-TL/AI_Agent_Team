@@ -1,1 +1,9 @@
+steps:
+  - name: Restore Packages
+    run: dotnet restore
 
+  - name: Build
+    run: dotnet build
+
+  - name: Run Tests
+    run: dotnet test
